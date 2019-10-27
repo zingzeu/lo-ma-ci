@@ -25,3 +25,4 @@ jobs:
         BUILD_DIR: "site/"
       secrets:
         GH_PAT
+
