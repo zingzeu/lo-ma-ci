@@ -1,4 +1,5 @@
 site_name: 福州话罗马字入门
+site_url: https://zingzeu.github.io/lo-ma-ci/
 theme:
   name: 'material'
   custom_dir: 'theme'
