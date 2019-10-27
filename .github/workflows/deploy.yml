@@ -1,7 +1,9 @@
-# Just trying to build in order to ensure everything is not broken.
-name: Build
+name: 生成并部署网站
 
-on: [push]
+on: 
+  push: 
+    branches:
+      - master
 
 jobs:
   build:
@@ -19,3 +21,8 @@ jobs:
         mkdocs --version
     - name: Build
       run: mkdocs build
+    - name: GitHub Pages Deploy | 部署
+      uses: maxheld83/ghpages@v0.2.1
+      env:
+        BUILD_DIR: "site/"
+        GH_PAT: ${{ secrets.GH_PAT }}
