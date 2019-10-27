@@ -1,4 +1,4 @@
-name: Build website
+name: Build website | 生成网站
 
 on: [push]
 
@@ -18,7 +18,7 @@ jobs:
         mkdocs --version
     - name: Build
       run: mkdocs build
-    - name: GitHub Pages Deploy
+    - name: GitHub Pages Deploy | 部署
       uses: maxheld83/ghpages@v0.2.1
       if: github.event_name == 'push' && github.ref == 'master'
       env:
