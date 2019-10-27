@@ -1,0 +1,8 @@
+site_name: 福州话罗马字入门
+theme:
+  name: 'material'
+  custom_dir: 'theme'
+  language: 'zh'
+  palette:
+    primary: 'blue'
+    accent: 'blue'
