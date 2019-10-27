@@ -17,7 +17,7 @@ jobs:
         pip install mkdocs
         mkdocs --version
     - name: Build
-        mkdocs build
+      run: mkdocs build
     - name: GitHub Pages Deploy
       uses: maxheld83/ghpages@v0.2.1
       if: github.event_name == 'push' && github.ref == 'master'
@@ -25,4 +25,3 @@ jobs:
         BUILD_DIR: "site/"
       secrets:
         GH_PAT
-
