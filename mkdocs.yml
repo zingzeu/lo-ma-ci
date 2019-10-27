@@ -6,6 +6,8 @@ theme:
   palette:
     primary: 'blue'
     accent: 'blue'
+markdown_extensions:
+  - pymdownx.superfences
 # 以下是目录/导航栏结构
 # 详见 https://www.mkdocs.org/user-guide/writing-your-docs/#configure-pages-and-navigation
 nav:
